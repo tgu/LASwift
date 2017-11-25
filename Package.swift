@@ -1,3 +1,4 @@
+// swift-tools-version:4.0
 // Package.swift
 //
 // Copyright (c) 2017 Alexander Taraymovich <taraymovich@me.com>
@@ -9,5 +10,12 @@
 import PackageDescription
 
 let package = Package(
-    name: "LASwift"
+    name: "LASwift",
+    products: [
+    .library(name: "LASwift", targets: ["LASwift"])
+    ],
+    dependencies: [],
+    targets: [
+    .target(name: "LASwift", dependencies: [])
+    ]
 )
